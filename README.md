@@ -20,7 +20,3 @@ Studi kasus: sistem bantu penilaian mutu daun teh (Sehat, Bercak Ringan, Bercak 
 - B3: pilihan perbaikan per kondisi (gelap: gamma 0,5; terang: gamma 1,8; kontras rendah: regang persentil 2-98; bayangan: CLAHE). KB bukan satu-satunya ukuran; sebagian pilihan menurunkan KB namun lebih benar secara visual.
 - B4: konvolusi manual identik dengan `filter2D` (selisih 0); median 5x5 terbaik untuk derau bawaan (PSNR rerata 41,04 dB pada 12 citra normal); kernel median >= 9 melemahkan bercak kecil.
 - B5: rangkaian praproses final (lebar 640, gamma 1,0, CLAHE clip 1,0 tile 8 pada kanal V, median 5, tanpa penajaman) menaikkan KB di kelima kondisi (+33,8% sampai +97,1%); simpangan baku daun sehat turun di semua kondisi (tidak ada bercak palsu).
-
-## Catatan
-Alat bantu AI (Claude) dipakai untuk memahami konsep dan memeriksa kode; lihat bagian Refleksi laporan.
-"# simuteh-2330511083" 
